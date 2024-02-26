@@ -1,0 +1,191 @@
+/* styling */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+body{
+    background-color: hsl(27, 66%, 92%)
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.cards-div{
+    display: grid;
+    row-gap: 20px;
+    place-items: center;
+}
+
+/* card one styling */
+.card-one{
+    display: flex;
+    justify-content: center;
+    gap: 170px;
+    border-radius: 10px;
+    width: 390px;
+    height: 90px;
+    background-color: hsl(10, 79%, 65%)
+}
+
+.text{
+    color: white;
+    margin-top: 20px;
+}
+
+.logo{
+    margin-top: 20px;
+}
+
+/* card two styling */
+.card-two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    width: 390px;
+    height: 400px;
+    background-color: hsl(33, 100%, 98%)
+}
+
+h2{
+    margin-top: 10px;
+}
+
+.card-two .bars{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 70px;
+}
+
+.bar{
+    width: 35px;
+    height: 40px;
+    background-color: hsl(10, 79%, 65%);
+    position: relative;
+    top: 50px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.mon{
+    height: 40px;
+}
+
+.tue{
+    background-color: hsl(186, 34%, 60%);
+    top: -10px;
+    height: 100px;
+
+}
+
+.wed{
+    top: -25px;
+    height: 115px;
+}
+
+.thu{
+    top: -5px;
+    height: 95px;
+}
+
+.fri{
+    top: -1px;
+    height: 90px;
+}
+
+.sat{
+    top: -20px;
+    height: 110px;
+}
+
+.sun{
+    top: -10px;
+    height: 100px;
+}   
+
+.days{
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    margin-top: -20px;
+}
+
+
+
+.price{
+    border: 1px solid hsl(25, 47%, 15%);
+    background-color: hsl(25, 47%, 15%);
+    color: white;
+    font-size: 0.8rem;
+    margin-top: -20px;
+}
+
+.line{
+    display: flex;
+    justify-content: center;
+    background-color: hsl(27, 66%, 92%);
+    width: 320px;
+    height: 3px;
+    margin-top: 40px;
+}
+
+.last-text{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 25px;
+}
+
+.tot{
+    color:  hsl(28, 10%, 53%)
+}
+
+h1{
+    color: hsl(25, 47%, 15%);
+}
+
+
+.last .last-p{
+    font-weight: bold;
+}
+
+.last-m{
+    margin-top: 5px;
+}
+
+.mm{
+    margin-top: 2px;
+}
+
+/* responsive design */
+@media (max-width: 1200px){
+    .card-one{
+        width: 300px;
+        gap: 90px;
+    }
+
+    .card-two{
+        width: 300px;
+    }
+
+    .card-two .bars{
+        gap: 5px;
+    }
+
+    .last-text{
+        gap: 90px
+    }
+
+    .days{
+        gap: 15px;
+    }
+}
