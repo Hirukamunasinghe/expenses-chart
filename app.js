@@ -28,7 +28,7 @@ const getBarAmount = async (index) => { // Accept index parameter
     bars[index].innerHTML = "";
 
     const price = document.createElement("p");
-    price.textContent = data[index].amount;
+    price.textContent = `$ ${data[index].amount}`;
     price.classList.add('price');
     bars[index].appendChild(price);
 };
